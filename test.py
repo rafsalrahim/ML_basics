@@ -18,12 +18,12 @@ print(confidence)
 y_pred = clf.predict(X_test)
 #converting the numpy array to list
 x=np.array(y_pred).tolist()
-
+#print (x)
 #printing first 5 predictions
 print("\nThe prediction:\n")
 for i in range(0,5):
-    print x[i]
+    print (x[i])
     
 #printing first five expectations
 print("\nThe expectation:\n")
-print y_test.head()
+print (y_test)
