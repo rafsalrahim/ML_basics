@@ -26,4 +26,4 @@ for i in range(0,5):
     
 #printing first five expectations
 print("\nThe expectation:\n")
-print y_test.head()
+print (y_test)
