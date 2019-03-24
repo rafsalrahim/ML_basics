@@ -5,7 +5,7 @@ from sklearn import preprocessing
 from sklearn import tree
 dataset_url = 'http://mlr.cs.umass.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv'
 data = pd.read_csv(dataset_url, sep=';')
-print (data)
+#print (data)
 y = data.quality
 X = data.drop('quality', axis=1)
 X_train, X_test, y_train, y_test = train_test_split(X, y,test_size=0.2)
