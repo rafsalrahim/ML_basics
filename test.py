@@ -16,3 +16,14 @@ confidence = clf.score(X_test, y_test)
 print("\nThe confidence score:\n")
 print(confidence)
 y_pred = clf.predict(X_test)
+#converting the numpy array to list
+x=np.array(y_pred).tolist()
+
+#printing first 5 predictions
+print("\nThe prediction:\n")
+for i in range(0,5):
+    print x[i]
+    
+#printing first five expectations
+print("\nThe expectation:\n")
+print y_test.head()
