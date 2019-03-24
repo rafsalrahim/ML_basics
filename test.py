@@ -8,3 +8,5 @@ data = pd.read_csv(dataset_url, sep=';')
 print (data)
 y = data.quality
 X = data.drop('quality', axis=1)
+X_train, X_test, y_train, y_test = train_test_split(X, y,test_size=0.2)
+print(X_train.head())
